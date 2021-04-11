@@ -41,7 +41,8 @@ pipeline{
            stage('UnitTest'){
                agent any
               steps{
-                  sh 'mvn test'
+                  echo 'testing..'
+		      sh 'mvn test'
               }
                post {
                success {
